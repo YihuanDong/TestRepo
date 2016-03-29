@@ -6,7 +6,7 @@ Here is some instruction on how you should use this file:
 
 The stars in the bracket below are placeholders for some text.
 
-<****************>
+<Group member A has edited here>
 
 If you are **Group Member A**: Please substitute the stars in the bracket with "Group member A has edited here"
 
