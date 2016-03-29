@@ -1,5 +1,6 @@
 import subprocess
 import os, traceback
+import sys
 
 try:
     print os.listdir("./decision_tree")
@@ -17,8 +18,10 @@ try:
     
     filepath = "python " + shellPath + " " + toolName
     print filepath
-    
-    subprocess.call(["python",shellPath,toolName],shell=True)
+    if sys.platform.startswith("win32"):
+        subprocess.call(["python",shellPath,toolName],shell=True)
+    else:
+        subprocess.call([filepath],shell=True)
     #subprocess.call(['python E:\\Courses\\CSC_510\\TestRepo\\decision_tree email'],shell = True)
     print "3"
 except Exception as e:
